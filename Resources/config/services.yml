@@ -1,0 +1,13 @@
+services:
+    face.commander.command_bus:
+        alias: face.commander.default.command_bus
+
+    face.commander.default.command_bus:
+        class: Face\CommanderBundle\Command\DefaultCommandBus
+        arguments: ["@service_container", "@command_translator"]
+
+    face.commander.command_translator:
+        alias: face.commander.default.command_translator
+
+    face.commander.default.command_translator:
+        class: Face\CommanderBundle\Command\DefaultCommandTranslator
