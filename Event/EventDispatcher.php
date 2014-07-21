@@ -4,7 +4,6 @@ namespace Face\CommanderBundle\Event;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use Symfony\Component\HttpKernel\Tests\Logger;
 
 class EventDispatcher
 {
@@ -41,7 +40,7 @@ class EventDispatcher
 
             $this->event->dispatch($eventName, $event);
 
-            $this->logger->info($eventName . ' was fired.');
+            $this->log->info($eventName . ' was fired.');
         }
     }
 
