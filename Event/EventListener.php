@@ -2,6 +2,8 @@
 
 namespace Face\CommanderBundle\Event;
 
+use ReflectionClass;
+
 abstract class EventListener
 {
     public function handle($event)
