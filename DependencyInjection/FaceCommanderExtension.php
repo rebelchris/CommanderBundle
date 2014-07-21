@@ -1,6 +1,6 @@
 <?php
 
-namespace Face\CommanderBundle;
+namespace Face\CommanderBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
