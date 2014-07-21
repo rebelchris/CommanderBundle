@@ -2,7 +2,8 @@
 
 namespace Face\CommanderBundle;
 
-class FaceCommanderBundle
-{
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
+class FaceCommanderBundle extends Bundle
+{
 }
