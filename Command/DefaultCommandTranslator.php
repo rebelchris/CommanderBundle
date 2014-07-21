@@ -13,9 +13,11 @@ class DefaultCommandTranslator implements CommandTranslator
      */
     public function toCommandHandler($command)
     {
-        $commandClass = get_class($command);
-        $handler = substr_replace($commandClass, 'CommandHandler', strrpos($commandClass, 'Command'));
+        $class = join('', array_slice(explode('\\', get_class($command)), -1));
 
-        return $handler;
+        $result = explode(' ' , preg_replace("([A-Z])", " $0", $class));
+        $result = array_filter($result);
+
+        return strtolower(implode('.', $result)) . '.handler';
     }
 }
