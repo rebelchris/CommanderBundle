@@ -11,3 +11,7 @@ services:
 
     face.commander.default.command_translator:
         class: Face\CommanderBundle\Command\DefaultCommandTranslator
+
+    face.commander.event_dispatcher:
+        class: Face\CommanderBundle\Event\EventDispatcher
+        arguments: ["@event_dispatcher", "@logger"]
