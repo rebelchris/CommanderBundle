@@ -1,5 +1,5 @@
 {
-    "name": "face/commander-bundle",
+    "name": "rebelchris/commander-bundle",
     "type": "symfony-bundle",
     "description": "Command handler bundle",
     "keywords": ["command handler"],
