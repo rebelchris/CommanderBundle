@@ -6,13 +6,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Stef Vaessen",
-            "email": "stef@stefvaessen.nl"
+            "name": "Chris Bongers",
+            "email": "c.bongers@lameco.nl"
         }
     ],
     "require": {
-        "php": ">=5.3.2",
-        "symfony/framework-bundle": "~2.1"
+        "php": ">=5.6",
+        "symfony/framework-bundle": ">=2.1"
     },
     "autoload": {
         "psr-0": { "Face\\CommanderBundle": "" }
